@@ -1,0 +1,558 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+
+
+@font-face {
+    font-family: 'League Gothic';
+    src: url('leaguegothic-regular-webfont.eot');
+    src: url('leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('leaguegothic-regular-webfont.woff') format('woff'),
+         url('leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('leaguegothic-regular-webfont.svg#league_gothic_italicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+	background-image: url(../picta/sss.png); 
+	min-width: 800px;
+	color: #8c8c8c;
+}
+
+.main {
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+/* Header */
+
+header {
+	margin-top: 40px;
+}
+
+/* что бы заголовок был отдельным куском и мог растягивать родителя*/
+header:after {   
+	content: ''; 
+	display: block;
+	clear: both;
+	
+}	
+/* **************************** */
+
+.logo {
+	float: left;
+} 
+
+
+.name, .logo-text {
+	display: block;
+	text-transform: uppercase;
+
+}
+
+.logo a {
+	text-decoration: none;
+}
+
+
+.name {
+	color: #db3f4c;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+	
+}
+
+
+.logo-text {
+	color:  #8c8c8c;
+	font-family: Impact, sans-serif;
+	font-size: 50px;
+	border-bottom: 5px solid #8c8c8c;
+	height: 55px;
+
+}
+
+.logo a:hover .logo-text {
+	border-bottom: 0;
+}
+
+
+
+/* NAV */ 
+
+
+.header-navigation {
+	float: right;
+	font-family: Impact, sans-serif;
+	font-size: 23px;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.header-navigation  a {
+	text-decoration: none;
+}
+
+.header-navigation li {
+	display: inline-block;
+	margin-left: 2px;
+	padding: 0 5px;
+	
+}
+
+.header-navigation a {
+	color: #c0bebf;	
+}
+
+
+.header-navigation, .active {
+	border-bottom: 2px solid;
+	padding: 0 5px;
+}
+
+.header-navigation {
+	border-bottom: none;
+}
+
+.header-navigation, .active a {
+	color: #908f8d;
+}
+
+
+.header-navigation li:hover {
+	 border-bottom: 2px solid #908f8d;
+}
+
+.header-navigation a:hover li{
+	color: #908f8d;
+}
+
+/* Section */
+
+.hello h1 {
+	text-align: center;
+	font-size: 70px;
+	color: #8c8c8c;
+	font-family: Impact, sans-serif;
+
+}
+
+.hello p {
+	text-align: center;
+	font-size: 40px;
+	color: #8c8c8c;
+	font-family: Impact, sans-serif;
+}
+
+/* Text */
+
+.big_row:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.row {
+	margin-top: 30px;
+}
+
+.col-left h2 {
+	text-transform: uppercase;
+	font-family: Impact, sans-serif;
+	color: #D64542;
+	font-size: 40px;
+	margin-bottom: 10px;
+	border-bottom: 4px solid #DEDFDE;
+	padding: 0 12px;
+	margin-right: 10px;
+}
+
+
+.me {
+	margin-top: 20px;
+
+}
+
+.about-me {
+	font-size: 16px;
+	overflow: hidden;
+	line-height: 24px;
+}
+
+
+.col-left h2 {
+	height: 45px;
+	overflow: hidden;
+}
+
+
+
+.col-left {
+	float: left;
+	width: 50%;
+	margin-right: 10px;
+	margin-top: 1px;
+}
+
+
+.col-left img {
+	float: left;
+	overflow: hidden;
+	width: 119px;
+	margin-right: 20px;
+	margin-left: 10px;
+
+}
+
+
+/* Правая колонка */
+
+.bouth {
+	margin-left: 10px;
+	padding-top: 10px;
+}
+
+.col-right {
+	overflow: hidden;
+}
+
+.inner h3 {
+	margin-bottom: 3px;
+}
+
+.inner li {
+	margin-bottom: 2px;
+}
+
+.inner {
+	margin-left: -4px;
+}
+
+
+.col-right h2 {
+	text-transform: uppercase;
+	font-family: Impact, sans-serif;
+	color: #D64542;
+	font-size: 40px;
+	margin-bottom: 10px;
+	border-bottom: 4px solid #DEDFDE;
+	padding: 0 12px;
+	margin-right: 10px;
+}
+
+.col-right h2 {
+	height: 46px;
+}
+
+
+
+.col-web > .inner {
+	margin-left: 2px;
+}
+
+.col-web {
+	float: left;
+	width: 50%;
+}
+
+.col-web h3 {
+	font-size: 31px;
+	font-family: Impact, sans-serif;
+	text-transform: uppercase;
+}
+
+
+.col-design {
+	overflow: hidden;
+	padding-left: 8px;
+}
+
+.col-design h3 {
+	font-size: 31px;
+	font-family: Impact, sans-serif;
+	overflow: hidden;
+	text-transform: uppercase;
+	padding-top: 3px;
+}
+
+.list > li {
+	padding-left: 15px;
+}
+
+.list > li:before {
+	content: url(../shits/sircle.jpg);
+	width: 5px;
+	height: 5px;
+	color: #D64142;
+	position: absolute;
+	margin-left: -14px;
+}
+
+/* MY WORK */
+
+.all_work:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.my_work {
+	margin-top: 100px;
+}
+
+.my_work h2 {
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: Impact, sans-serif;
+	color: #D64142;
+	margin-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+}
+
+.my_work {
+	border-bottom: 4px solid #DEDFDE;
+}
+
+.work_navigation {
+	float: right;
+	margin-top: -25px;
+	margin-right: -12px;
+}
+
+.list_row li {
+	display: inline;
+}
+
+.work_navigation li {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: Impact, sans-serif;
+	color: #8C8A8C;
+	margin-right: 15px;
+}
+
+.list_row a {
+	text-decoration: none;
+}
+
+.work_navigation a:hover li {
+	color: #DE6563;
+}
+
+
+.work-navigation, .active_red a {
+	color: #DE6563;
+}
+
+
+.list_row a:hover, .active_red {
+	color: #908f8d;
+}
+
+/* PICTURES */ 
+
+.gallery:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+.gallery .inner_top {
+	margin-top: 20px;
+}
+
+.gallery .pictures {
+	text-align: center;
+    width: 80%;
+    margin: 0 224px;
+    margin: 0px auto;
+	padding-left: 33px;
+}
+
+
+.p1 {
+	display: inline-block;
+	margin-right: 20px;
+
+}
+
+h4 {
+	text-align: center;
+	margin: 18px 0;
+	font-family: Verdana, sans-serif;
+	font-size: 15px;
+}
+
+.pictures a {
+	text-decoration: none;
+	color: #908f8d;
+}
+
+.pictures a:hover  {
+	color: #DE6563;
+}
+
+/*Contact*/
+
+.contact:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.zag h2 { 
+	text-transform: uppercase;
+	font-size: 40px;
+	font-family: Impact, sans-serif;
+	color: #D64142;
+	margin-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 10px;
+	border-bottom: 4px solid #DEDFDE;
+}
+
+ .txt_one {
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'League Gothic',sans-serif;
+}
+
+
+.col_text_left {
+	float: left;
+	overflow: hidden;
+	width: 50%;
+	margin-top: 32px; 
+ 	margin-left: 10px;
+ }
+
+
+h5 {
+	font-family: Verdana, sans-serif;
+}
+
+ .dir {						/* input имя */
+ 	margin-right: 20px; 
+ 	margin-top: 5px;
+  	height: 41px;
+	width: 290px;
+}
+
+.name_mail input {
+	margin-right: 20px; 
+ 	margin-top: 5px;
+  	height: 41px;
+	width: 290px;
+}
+
+.your {
+	display: inline;
+	float: left;
+	margin-right: 224px;
+}
+
+.e-mail {
+	margin-right: 218px;
+}
+
+
+
+.message {
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+	
+
+textarea {
+	width: 607px;
+	height: 156px;
+	font-size: 20px;
+}
+
+
+.button {
+	margin-top: 20px;
+}
+
+/********RIGHT**********/
+
+.col_text_right {
+	float: right;
+	width: 48%;
+	margin-top: 40px;
+}
+
+
+ .txt_two {
+	margin-top: 40px;
+	text-transform: uppercase;
+	font-size: 30px;
+	font-family: 'League Gothic', sans-serif
+}
+
+
+
+.map {
+	float: left;
+	margin-top: 15px;
+	width: 301px;
+	overflow: hidden;
+}
+
+
+.big {
+	font-size: 27px;
+	font-family: 'League Gothic', sans-serif;
+}
+
+.other {
+	margin-top: 7px;
+	margin-bottom: 7px;
+}
+
+.C_L ul {
+	float: left;
+	margin-left: 62px;
+	margin-top: 12px;
+	line-height: 21px;
+	font-size: 17px; 
+}
+
+.rap {
+	color: #E78A8C;
+}
+
+/*********END************/
+
+
+.bord {
+	border-top: 4px solid #DEDFDE;
+	margin-top: 20px;
+
+}
+
+.end_text {
+	font-style: Verdana, sans-serif;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.end_1 {
+	color: #E17779;
+	margin-left: 10px;
+}
+
+.local {
+	float: right;
+}
+
+.local li {
+	display: inline-block;
+	margin-top: -20px;
+}
